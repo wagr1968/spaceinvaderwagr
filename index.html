@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Invaders - William Gutiérrez</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>SPACE INVADERS</h1>
+        <div class="game-info">
+            <div class="score">Puntuación: <span id="score">0</span></div>
+            <div class="lives">Vidas: <span id="lives">3</span></div>
+        </div>
+        
+        <!-- Canvas del juego -->
+        <canvas id="gameCanvas" width="600" height="600"></canvas>
+        
+        <!-- Mensajes del juego -->
+        <div id="gameMessage" class="game-message"></div>
+        
+        <!-- Controles -->
+        <div class="controls">
+            <p>Controles: ← → para mover | ESPACIO para disparar</p>
+        </div>
+        
+        <!-- Controles táctiles para móvil -->
+        <div class="touch-controls">
+            <button class="touch-button" id="leftBtn">←</button>
+            <button class="touch-button shoot-button" id="shootBtn">DISPARAR</button>
+            <button class="touch-button" id="rightBtn">→</button>
+        </div>
+        
+        <!-- Crédito -->
+        <div class="credit">Creado por William Gutiérrez</div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
