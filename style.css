@@ -168,6 +168,40 @@ body::before {
     padding: 20px 30px;
 }
 
+/* Botón de reinicio */
+.restart-container {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.restart-button {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    border: 3px solid #FFD700;
+    border-radius: 25px;
+    color: #1a1a2e;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 12px 25px;
+    cursor: pointer;
+    user-select: none;
+    touch-action: manipulation;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.restart-button:hover {
+    background: linear-gradient(135deg, #FFA500, #FFD700);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 215, 0, 0.4);
+}
+
+.restart-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(255, 215, 0, 0.3);
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     body {
@@ -216,6 +250,11 @@ body::before {
         font-size: 1.2em;
         padding: 15px 25px;
     }
+    
+    .restart-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -238,5 +277,10 @@ body::before {
         font-size: 0.9em;
         padding: 10px 15px;
         min-width: 50px;
+    }
+    
+    .restart-button {
+        font-size: 0.9em;
+        padding: 8px 16px;
     }
 }

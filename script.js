@@ -364,7 +364,7 @@ document.addEventListener('keydown', (e) => {
         shoot();
     }
     
-    if (e.key === 'r' || e.key === 'R') {
+    if (e.key === 'r' || e.key === 'R' || e.key === 'Enter') {
         resetGame();
     }
 });
@@ -378,6 +378,7 @@ function setupTouchControls() {
     const leftBtn = document.getElementById('leftBtn');
     const rightBtn = document.getElementById('rightBtn');
     const shootBtn = document.getElementById('shootBtn');
+    const restartBtn = document.getElementById('restartBtn');
     
     // Botón izquierdo
     leftBtn.addEventListener('touchstart', (e) => {
@@ -431,6 +432,17 @@ function setupTouchControls() {
     shootBtn.addEventListener('click', (e) => {
         e.preventDefault();
         shoot();
+    });
+    
+    // Botón de reinicio
+    restartBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        resetGame();
+    });
+    
+    restartBtn.addEventListener('touchstart', (e) => {
+        e.preventDefault();
+        resetGame();
     });
 }
 
